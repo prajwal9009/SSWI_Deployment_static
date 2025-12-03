@@ -1,0 +1,1 @@
+# SSWI_Deployment_static
