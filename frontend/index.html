@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purchase Order Item Recommender</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Purchase Order Item Recommender</h2>
+
+      <div class="section">
+        <h2>New Purchase Orders Line Items</h2>
+        <div id="poTableContainer" class="lading">
+          Loading purchase orders...
+        </div>
+        <button
+          class="process-btn"
+          onclick="processPOs()"
+          disabled
+          id="processBtn"
+        >
+          Process Selected Orders
+        </button>
+      </div>
+
+      <div class="section">
+        <h2>Recommendations</h2>
+        <div id="processedTableContainer">
+          <div class="no-data">
+            Select and process purchase orders to view recommendations
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
